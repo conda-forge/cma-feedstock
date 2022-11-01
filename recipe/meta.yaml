@@ -17,9 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
+    - numpy
   run:
-    - python
+    - python >=3.6
+    - numpy
 
 test:
   imports:
@@ -28,7 +30,7 @@ test:
 
 about:
   home: https://github.com/CMA-ES/pycma
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: CMA-ES, Covariance Matrix Adaptation Evolution Strategy for non-linear numerical optimization in Python
