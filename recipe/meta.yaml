@@ -1,5 +1,5 @@
 {% set name = "cma" %}
-{% set version = "3.0.3" %}
+{% set version = "3.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f54d753fa2322d4fef1c40d899d65f0990a3b1b9b56ada0766c3cb9cb82bca8
+  sha256: 47ac71ddd2b9a922daa601516064a585a1a3dbbae7802bca935db25e525547eb
 
 build:
   number: 0
@@ -17,9 +17,11 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
+    - numpy
   run:
-    - python
+    - python >=3.6
+    - numpy
 
 test:
   imports:
@@ -28,7 +30,7 @@ test:
 
 about:
   home: https://github.com/CMA-ES/pycma
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: CMA-ES, Covariance Matrix Adaptation Evolution Strategy for non-linear numerical optimization in Python
