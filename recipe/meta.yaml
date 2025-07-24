@@ -1,13 +1,13 @@
 {% set name = "cma" %}
-{% set version = "4.0.0" %}
+{% set version = "4.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fd28ce56983bf2fca0e614189d60134ebb80bf604f070d1ea095ea4e856f13a5
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: faa8933e9d55e199c052dd114d123d8d9a3ca914d932629e8b6e77200681a206
 
 build:
   number: 0
